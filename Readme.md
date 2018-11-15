@@ -1,3 +1,9 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [Default.aspx](./CS/ASPxPivotGrid_DisplayUnderlyingRecords/Default.aspx) (VB: [Default.aspx](./VB/ASPxPivotGrid_DisplayUnderlyingRecords/Default.aspx))
+* [Default.aspx.cs](./CS/ASPxPivotGrid_DisplayUnderlyingRecords/Default.aspx.cs) (VB: [Default.aspx](./VB/ASPxPivotGrid_DisplayUnderlyingRecords/Default.aspx))
+<!-- default file list end -->
 # How to Display Underlying Records
 
 
