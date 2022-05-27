@@ -1,24 +1,24 @@
 ﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Default.aspx.cs"
            Inherits="DisplayUnderlyingRecords._Default" %>
 
-<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.14.0,
+<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.7.0,
            Culture=neutral, PublicKeyToken=b88d1754d700e49a"
-           Namespace="DevExpress.Web.ASPxGridView"
+           Namespace="DevExpress.Web"
            TagPrefix="dxwgv" %>
 
-<%@ Register Assembly="DevExpress.Web.v13.1, Version=13.1.14.0,
+<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.7.0,
          Culture=neutral, PublicKeyToken=b88d1754d700e49a"
-         Namespace="DevExpress.Web.ASPxPopupControl"
+         Namespace="DevExpress.Web"
          TagPrefix="dxpc" %>
 
-<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v13.1, Version=13.1.14.0,
+<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.7.0,
          Culture=neutral, PublicKeyToken=b88d1754d700e49a"
          namespace="DevExpress.Web.ASPxPivotGrid"
          tagprefix="dxwpg" %>
 
-<%@ Register assembly="DevExpress.Web.v13.1, Version=13.1.14.0,
+<%@ Register assembly="DevExpress.Web.v21.2, Version=21.2.7.0,
          Culture=neutral, PublicKeyToken=b88d1754d700e49a"
-         namespace="DevExpress.Web.ASPxEditors"
+         namespace="DevExpress.Web"
          tagprefix="dx" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
@@ -34,31 +34,42 @@
     <input runat="server" id="RowIndex" type="hidden" enableviewstate="true" />
     <div>
         <dxwpg:ASPxPivotGrid ID="ASPxPivotGrid1" runat="server"
-            DataSourceID="AccessDataSource1"            
-            ClientInstanceName="PivotGrid" ClientIDMode="AutoID">
+            DataSourceID="SqlDataSource1"            
+            ClientInstanceName="PivotGrid" ClientIDMode="AutoID" IsMaterialDesign="False">
+            <OptionsData DataProcessingEngine="Optimized" />
             <Styles>
                 <CellStyle Cursor="pointer">
                 </CellStyle>
             </Styles>
             <Fields>
                 <dxwpg:PivotGridField Area="RowArea" AreaIndex="0"
-                    Caption="Customer" FieldName="CompanyName"
+                    Caption="Customer"
                     ID="fieldCompanyName">
+                    <DataBindingSerializable>
+                        <dxwpg:DataSourceColumnBinding ColumnName="CompanyName" />
+                    </DataBindingSerializable>
                 </dxwpg:PivotGridField>
                 <dxwpg:PivotGridField Area="ColumnArea" AreaIndex="0"
-                    Caption="Year" FieldName="OrderDate"
+                    Caption="Year"
                     UnboundFieldName="Year"
-                    GroupInterval="DateYear"
                     ID="fieldOrderDate">
+                    <DataBindingSerializable>
+                        <dxwpg:DataSourceColumnBinding ColumnName="OrderDate" GroupInterval="DateYear" />
+                    </DataBindingSerializable>
                 </dxwpg:PivotGridField>
                 <dxwpg:PivotGridField Area="DataArea" AreaIndex="0"
-                    FieldName="ProductAmount"
                     Caption="Product Amount"
                     ID="fieldProductAmount">
+                    <DataBindingSerializable>
+                        <dxwpg:DataSourceColumnBinding ColumnName="ProductAmount" />
+                    </DataBindingSerializable>
                 </dxwpg:PivotGridField>
                 <dxwpg:PivotGridField Area="RowArea" AreaIndex="1"
-                    Caption="Products" FieldName="ProductName"
+                    Caption="Products"
                     ID="fieldProductName">
+                    <DataBindingSerializable>
+                        <dxwpg:DataSourceColumnBinding ColumnName="ProductName" />
+                    </DataBindingSerializable>
                 </dxwpg:PivotGridField>
             </Fields>
             <ClientSideEvents CellClick="function(s, e) {
@@ -92,10 +103,10 @@
                 </dxpc:PopupControlContentControl>
             </ContentCollection>
         </dxpc:ASPxPopupControl>
-        <asp:AccessDataSource ID="AccessDataSource1" runat="server"
-            DataFile="~/App_Data/nwind.mdb"
-            SelectCommand="SELECT * FROM [CustomerReports]"
-            DataSourceMode="DataReader" />  
+	    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
+            ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+            ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
+            SelectCommand="SELECT * FROM [CustomerReports]"></asp:SqlDataSource>
     </div>
     </form>
 </body>

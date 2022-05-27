@@ -1,5 +1,5 @@
 ﻿using System;
-using DevExpress.Web.ASPxGridView;
+using DevExpress.Web;
 
 namespace DisplayUnderlyingRecords {
     public partial class _Default : System.Web.UI.Page {

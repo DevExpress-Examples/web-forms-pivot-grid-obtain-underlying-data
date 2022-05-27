@@ -1,5 +1,5 @@
 ﻿Imports System
-Imports DevExpress.Web.ASPxGridView
+Imports DevExpress.Web
 
 Namespace DisplayUnderlyingRecords
     Partial Public Class _Default
