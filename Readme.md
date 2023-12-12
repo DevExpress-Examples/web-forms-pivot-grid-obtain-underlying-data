@@ -8,7 +8,11 @@
 **[[Run Online]](https://codecentral.devexpress.com/128577401/)**
 <!-- run online end -->
 
-The ASPxPivotGrid includes the drill-down capability, which enables you to retrieve a list of records that were used to calculate a particular summary. To obtain drill-down data, use the pivot grid's [CreateDrillDownDataSource](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.ASPxPivotGrid.CreateDrillDownDataSource.overloads?p=netframework) method. Its parameters completely identify a summary cell. In this example, an end-user can view records from the control's underlying data source, associated with a summary cell, by clicking on it. The obtained data is displayed by the ASPxGridView within a popup window.
+The ASPxPivotGrid includes the drill-down capability, which enables you to retrieve a list of records that were used to calculate a particular summary. 
+
+![](screenshot.png)
+
+To obtain drill-down data, use the pivot grid's [CreateDrillDownDataSource](https://docs.devexpress.com/AspNet/DevExpress.Web.ASPxPivotGrid.ASPxPivotGrid.CreateDrillDownDataSource.overloads?p=netframework) method. Its parameters completely identify a summary cell. In this example, an end-user can view records from the control's underlying data source, associated with a summary cell, by clicking on it. The obtained data is displayed by the ASPxGridView within a popup window.
 
 ## Files to Review
 
