@@ -1,22 +1,22 @@
-﻿<%@ Page Language="vb" AutoEventWireup="true" CodeBehind="Default.aspx.vb"
+<%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Default.aspx.vb"
            Inherits="DisplayUnderlyingRecords._Default" %>
 
-<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.14.0,
+<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.15.0,
            Culture=neutral, PublicKeyToken=b88d1754d700e49a"
            Namespace="DevExpress.Web"
            TagPrefix="dxwgv" %>
 
-<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.14.0,
+<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.15.0,
          Culture=neutral, PublicKeyToken=b88d1754d700e49a"
          Namespace="DevExpress.Web"
          TagPrefix="dxpc" %>
 
-<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.14.0,
+<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.15.0,
          Culture=neutral, PublicKeyToken=b88d1754d700e49a"
          namespace="DevExpress.Web.ASPxPivotGrid"
          tagprefix="dxwpg" %>
 
-<%@ Register assembly="DevExpress.Web.v21.2, Version=21.2.14.0,
+<%@ Register assembly="DevExpress.Web.v21.2, Version=21.2.15.0,
          Culture=neutral, PublicKeyToken=b88d1754d700e49a"
          namespace="DevExpress.Web"
          tagprefix="dx" %>
@@ -95,7 +95,7 @@
                           AutoGenerateColumns="True">
                         <ClientSideEvents EndCallback="function(s, e) {
                         if( s.cpShowDrillDownWindow )                            
-                            DrillDownWindow.ShowAtPos ( PivotGrid.GetMainElement().clientLeft, 
+	                        DrillDownWindow.ShowAtPos ( PivotGrid.GetMainElement().clientLeft, 
                             PivotGrid.GetMainElement().clientTop );
                           }" />                        
                         <SettingsLoadingPanel Mode="ShowOnStatusBar" />                        
@@ -106,7 +106,7 @@
 	    <asp:SqlDataSource ID="SqlDataSource1" runat="server" 
             ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
             ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" 
-            SelectCommand="SELECT * FROM [CustomerReports]"></asp:SqlDataSource> 
+            SelectCommand="SELECT * FROM [CustomerReports]"></asp:SqlDataSource>
     </div>
     </form>
 </body>
