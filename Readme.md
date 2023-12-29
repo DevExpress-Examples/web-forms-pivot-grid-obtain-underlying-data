@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Pivot Grid for Web Forms - How to Display Underlying Records
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128577401/)**
-<!-- run online end -->
 
 The ASPxPivotGrid includes the drill-down capability, which enables you to retrieve a list of records that were used to calculate a particular summary. 
 
