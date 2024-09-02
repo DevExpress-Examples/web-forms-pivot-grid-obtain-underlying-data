@@ -1,22 +1,22 @@
 <%@ Page Language="VB" AutoEventWireup="true" CodeBehind="Default.aspx.vb"
            Inherits="DisplayUnderlyingRecords._Default" %>
 
-<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.15.0,
+<%@ Register Assembly="DevExpress.Web.v24.2, Version=24.2.1.0,
            Culture=neutral, PublicKeyToken=b88d1754d700e49a"
            Namespace="DevExpress.Web"
            TagPrefix="dxwgv" %>
 
-<%@ Register Assembly="DevExpress.Web.v21.2, Version=21.2.15.0,
+<%@ Register Assembly="DevExpress.Web.v24.2, Version=24.2.1.0,
          Culture=neutral, PublicKeyToken=b88d1754d700e49a"
          Namespace="DevExpress.Web"
          TagPrefix="dxpc" %>
 
-<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v21.2, Version=21.2.15.0,
+<%@ Register assembly="DevExpress.Web.ASPxPivotGrid.v24.2, Version=24.2.1.0,
          Culture=neutral, PublicKeyToken=b88d1754d700e49a"
          namespace="DevExpress.Web.ASPxPivotGrid"
          tagprefix="dxwpg" %>
 
-<%@ Register assembly="DevExpress.Web.v21.2, Version=21.2.15.0,
+<%@ Register assembly="DevExpress.Web.v24.2, Version=24.2.1.0,
          Culture=neutral, PublicKeyToken=b88d1754d700e49a"
          namespace="DevExpress.Web"
          tagprefix="dx" %>
