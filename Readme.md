@@ -18,7 +18,7 @@ To obtain drill-down data, use the pivot grid's [CreateDrillDownDataSource](http
 * [Default.aspx.cs](./CS/ASPxPivotGrid_DisplayUnderlyingRecords/Default.aspx.cs) (VB: [Default.aspx.vb](./VB/ASPxPivotGrid_DisplayUnderlyingRecords/Default.aspx.vb))
 
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=web-forms-pivot-grid-obtain-underlying-data&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=web-forms-pivot-grid-obtain-underlying-data&~~~was_helpful=no)
 
